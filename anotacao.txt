@@ -1,0 +1,38 @@
+nomes antigos: id,numero,valor
+nomes: marca, HD e processador
+
+
+    static String url 
+    = "jdbc:mysql://localhost:3306/lojainformatica";
+    
+    static String login = "root";
+    static String senha = "";
+
+
+create table NotaFiscal(
+idNota Int auto_increment,
+numeroNota Int not null,
+valornota double not null,
+primary key(idNota) 
+);
+
+
+Alter table notafiscal
+add column processador varchar (255);
+
+
+banco novo
+
+create database basenotafiscal;
+
+use basenotafiscal;
+CREATE TABLE notaFiscal (
+    idNota INT AUTO_INCREMENT,
+    numeroNota VARCHAR(255) NOT NULL,
+    valorNota VARCHAR(255) NOT NULL,
+    PRIMARY KEY (idNota)
+);
+
+drop table notaFiscal;
+
+select * from  notafiscal;
